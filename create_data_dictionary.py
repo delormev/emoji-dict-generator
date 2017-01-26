@@ -47,11 +47,32 @@ setMeaningsAndDefaultMeaning('new_moon_with_face', ['the moon', 'dark'], 'the mo
 setMeaningsAndDefaultMeaning('loudspeaker', ['loud', 'the loudspeaker'], 'loud')
 setMeaningsAndDefaultMeaning('heart_eyes', ['love', 'enjoy'], 'love')
 setMeaningsAndDefaultMeaning('frowning2', ['sad', 'frowning'], 'sad')
+setMeaningsAndDefaultMeaning('rofl', ['lol', 'rofl'], 'lol')
+setMeaningsAndDefaultMeaning('cowboy', ['the cowboy'], 'cowboy')
+setMeaningsAndDefaultMeaning('lying_face', ['lie', 'Pinocchio'], 'lie')
+setMeaningsAndDefaultMeaning('nauseated_face', ['sick', 'unwell'], 'sick')
+setMeaningsAndDefaultMeaning('sneezing_face', ['sick', 'sneeze', 'cold'], 'sick')
+setMeaningsAndDefaultMeaning('man_in_tuxedo', ['the suit', 'well-dressed'], 'groom')
+setMeaningsAndDefaultMeaning('pregnant_woman', ['pregnant', 'pregnant woman'], 'pregnant')
+setMeaningsAndDefaultMeaning('face_palm', ['embarrassed', 'exasperated', 'the facepalm'], 'embarassed')
+setMeaningsAndDefaultMeaning('shrug', ['don\'t care', 'the shrug', 'don\'t know'], 'don\'t care')
+setMeaningsAndDefaultMeaning('call_me', ['call me'], 'call me')
+setMeaningsAndDefaultMeaning('fox', ['the fox'], 'the fox')
+setMeaningsAndDefaultMeaning('rhino', ['the rhino'], 'the rhino')
+setMeaningsAndDefaultMeaning('bat', ['the bat'], 'the bat')
+setMeaningsAndDefaultMeaning('eagle', ['the eagle'], 'the eagle')
+setMeaningsAndDefaultMeaning('owl', ['the owl'], 'the owl')
+setMeaningsAndDefaultMeaning('shark', ['the shark'], 'the shark')
+setMeaningsAndDefaultMeaning('butterfly', ['the butterfly'], 'the butterfly')
+setMeaningsAndDefaultMeaning('clown', ['the clown'], 'the clown')
 
 output = []
 
 for k in whitelist:
-	output.append(emojis_json[k])
+	if (emojis_json[k]['currentmeaning'] == ''):
+		print k
+	if ('-' not in emojis_json[k]['unicode']):
+		output.append(emojis_json[k])
 
 
 # Write out
