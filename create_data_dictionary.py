@@ -24,11 +24,13 @@ def setMeaningsAndDefaultMeaning(id, meanings, default_meaning):
 	emojis_json[id]['meanings'] = meanings
 	emojis_json[id]['currentmeaning'] = default_meaning
 
-setMeaningsAndDefaultMeaning('prince', ['the prince', 'the king', 'the knight', 'the boy'], 'the prince')
-setMeaningsAndDefaultMeaning('princess', ['the princess', 'the girl'], 'the princess')
+setMeaningsAndDefaultMeaning('prince', ['the prince', 'the king', 'the knight', 'the boy', 'the hero'], 'the prince')
+setMeaningsAndDefaultMeaning('princess', ['the princess', 'the girl', 'the hero'], 'the princess')
 setMeaningsAndDefaultMeaning('dragon', ['the dragon', 'the monster', 'the enemy'], 'the dragon')
-setMeaningsAndDefaultMeaning('heart', ['love', 'the heart', 'loves'], 'love')
-setMeaningsAndDefaultMeaning('thunder_cloud_rain', ['the storm', 'the rain', 'sad', 'scary'], 'the storm')
+setMeaningsAndDefaultMeaning('heart', ['love', 'the heart'], 'love')
+setMeaningsAndDefaultMeaning('thunder_cloud_rain', ['the storm', 'the rain', 'sad', 'scared', 'scary'], 'the storm')
+setMeaningsAndDefaultMeaning('dog', ['the dog', 'the pug', 'the friend'], 'the dog')
+setMeaningsAndDefaultMeaning('hugging', ['the hug', 'safe', 'secure'], 'the hug')
 
 output = []
 
