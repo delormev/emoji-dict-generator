@@ -1,6 +1,9 @@
 import json
 import urllib2
 
+# Set up emoji whitelist
+whitelist = ['grinning','grin','joy','rofl','smiley','smile','sweat_smile','laughing','wink','blush','yum','sunglasses','heart_eyes','kissing_heart','kissing','kissing_smiling_eyes','kissing_closed_eyes','relaxed','slight_smile','hugging','thinking','neutral_face','no_mouth','rolling_eyes','disappointed_relieved','disappointed_relieved','open_mouth','zipper_mouth','sleeping','nerd','stuck_out_tongue_winking_eye','frowning2','astonished','disappointed','worried','triumph','cry','sob','scream','dizzy_face','rage','innocent','cowboy','clown','lying_face','mask','thermometer_face','head_bandage','nauseated_face','sneezing_face','smiling_imp','skull','ghost','alien','robot','poop','smiley_cat','boy','girl','man','woman','older_man','older_woman','angel','cop','spy','guardsman','construction_worker','man_with_turban','santa','princess','prince','bride_with_veil','man_in_tuxedo','pregnant_woman','no_good','ok_woman','information_desk_person','bow','face_palm','shrug','walking','runner','muscle','point_left','point_right','point_up','v','vulcan','metal','call_me','ok_hand','thumbsup','thumbsdown','punch','wave','clap','raised_hands','pray','nail_care','kiss','zzz','eyeglasses','dark_sunglasses','necktie','shirt','jeans','dress','kimono','womans_clothes','handbag','school_satchel','athletic_shoe','high_heel','boot','crown','tophat','lipstick','ring','closed_umbrella','briefcase']
+
 # Load file
 emojis_f = urllib2.urlopen('https://raw.githubusercontent.com/Ranks/emojione/master/emoji.json')
 
@@ -21,6 +24,7 @@ for k in emojis_json.keys():
 
 # Overwrite the data we need
 def setMeaningsAndDefaultMeaning(id, meanings, default_meaning):
+	whitelist.append(id)
 	emojis_json[id]['meanings'] = meanings
 	emojis_json[id]['currentmeaning'] = default_meaning
 
@@ -42,10 +46,9 @@ setMeaningsAndDefaultMeaning('new_moon_with_face', ['the moon', 'dark'], 'the mo
 setMeaningsAndDefaultMeaning('loudspeaker', ['loud', 'the loudspeaker'], 'loud')
 setMeaningsAndDefaultMeaning('heart_eyes', ['love', 'enjoy'], 'love')
 
-
 output = []
 
-for k in emojis_json.keys():
+for k in whitelist:
 	output.append(emojis_json[k])
 
 
