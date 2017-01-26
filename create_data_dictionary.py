@@ -31,6 +31,17 @@ setMeaningsAndDefaultMeaning('heart', ['love', 'the heart'], 'love')
 setMeaningsAndDefaultMeaning('thunder_cloud_rain', ['the storm', 'the rain', 'sad', 'scared', 'scary'], 'the storm')
 setMeaningsAndDefaultMeaning('dog', ['the dog', 'the pug', 'the friend'], 'the dog')
 setMeaningsAndDefaultMeaning('hugging', ['the hug', 'safe', 'secure'], 'the hug')
+setMeaningsAndDefaultMeaning('arrow_right', ['right', 'leave'], 'right')
+setMeaningsAndDefaultMeaning('house_with_garden', ['the house', 'home'], 'the house')
+setMeaningsAndDefaultMeaning('walking', ['walking', 'hiking', 'the pedestrian'], 'walking')
+setMeaningsAndDefaultMeaning('oncoming_bus', ['the bus', 'public transport'], 'the bus')
+setMeaningsAndDefaultMeaning('cityscape', ['the city', 'the town', 'the building'], 'the city')
+setMeaningsAndDefaultMeaning('clapper', ['the cinema', 'the movie', 'hollywood'], 'the cinema')
+setMeaningsAndDefaultMeaning('projector', ['the projector', 'the movie'], 'the projector')
+setMeaningsAndDefaultMeaning('new_moon_with_face', ['the moon', 'dark'], 'the moon')
+setMeaningsAndDefaultMeaning('loudspeaker', ['loud', 'the loudspeaker'], 'loud')
+setMeaningsAndDefaultMeaning('heart_eyes', ['love', 'enjoy'], 'love')
+
 
 output = []
 
