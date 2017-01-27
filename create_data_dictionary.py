@@ -4,7 +4,7 @@ import urllib2
 # Set up emoji whitelist
 dict_f = open('./whitelist_dict.csv', 'r')
 output = []
-quick_access = ['arrow_right', 'house_with_garden', 'oncoming_bus', 'man', 'woman', 'boy', 'girl', 'cityscape', 'clapper', 'projector', 'tropical_fish', 'heart_eyes', 'louspeaker', 'new_moon_with_face']
+quick_access = ['arrow_right', 'house_with_garden', 'oncoming_bus', 'man', 'woman', 'boy', 'girl', 'cityscape', 'clapper', 'projector', 'tropical_fish', 'heart_eyes', 'loudspeaker', 'new_moon_with_face']
 
 # Load file
 emojis_f = urllib2.urlopen('https://raw.githubusercontent.com/Ranks/emojione/master/emoji.json')
