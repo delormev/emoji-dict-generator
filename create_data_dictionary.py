@@ -34,7 +34,7 @@ for line in dict_f:
 		if ('-' in emoji['unicode']):
 			emoji['unicode'] = emoji['unicode'].split('-')[0]
 		# Set the visibility filter
-		emoji['quickaccess'] = 'true' if (id in quick_access) else 'false' 
+		emoji['quickaccess'] = True if (id in quick_access) else False
 		output.append(emoji)
 	except:
 		print "Can't find emoji with this id: " + str(id)
